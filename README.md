@@ -8,8 +8,8 @@ Each day, you will find a new lesson focusing on different aspects of TypeScript
 
 ## Repository Contents
 
-- `Day-1/`: Introduction to TypeScript
-- `Day-2/`: Basic Types
+- `Day-1/`: Introduction to TypeScript & Basic Types
+- `Day-2/`: Explicit and Union Types
 <!-- - `Day03/`: Interfaces
 - `Day04/`: Classes
 - `Day05/`: Functions -->

@@ -4,36 +4,40 @@
 //tsc -w
 //tsc script.ts
 //tsc
-console.log("Hello world!");
-const country = 'Bangladesh and Myanmar';
-console.log(country);
-let Player = "Mashrafi Bin Mortaza";
-console.log(Player);
-// Player =  34; // this will produce an error message
-Player = "Tamim Iqbal Khan";
-console.log(Player);
-let age;
-console.log(age); // this will log undefined
-age = 34;
-console.log(age); // this will log 34
-age = "Mashrafi Bin Mortaza";
-console.log(age); // this will log Mashrafi Bin Mortaza without any errors
-function multiply(a, b) {
-    return a * b;
+//DataTypes
+let a = "Md Shojib Hossain";
+let b = 25;
+let c = true;
+let d = "Hello World";
+console.log(a, b, c, d);
+//Arrays
+let e = [];
+e = ["Md Shojib Hossain", 25, true];
+console.log(e);
+//Objects
+let f;
+f = {
+    name: "Md Shojib Hossain",
+    age: 24,
+    isStudent: true
+};
+console.log(f);
+//Functions
+function greet(name) {
+    console.log(`Hello, ${name}!`);
 }
-console.log(multiply(5, 3)); // this will log 15
-// console.log(multiply("5", 3)); // this will produce an error message because the function expects number inputs
-let myArray = [1, 2, 3, 4, 5];
-console.log(myArray); // this will log [1, 2, 3, 4, 5]
-myArray.push(6);
-console.log(myArray); // this will log [1, 2, 3, 4, 5, 6]
-myArray.pop();
-console.log(myArray); // this will log [1, 2, 3, 4, 5]
-myArray[0] = 10;
-console.log(myArray); // this will log [10, 2, 3, 4, 5]
-myArray.splice(1, 2, 7, 8);
-console.log(myArray); // this will log [10, 7, 8, 5]
-myArray.reverse();
-console.log(myArray); // this will log [8, 7, 10, 5]
-// myArray.push('hello');
-// console.log(myArray); // this will log [8, 7, 10, 5, "hello"]
+greet("Md Shojib Hossain");
+function sum(x, y) {
+    return x + y;
+}
+console.log(sum(10, 20));
+//Union Types
+let x = [];
+x.push("Hello");
+x.push(10);
+console.log(x);
+let y;
+y = "Hello";
+console.log(y);
+y = 10;
+console.log(y);

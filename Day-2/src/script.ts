@@ -4,44 +4,51 @@
     //tsc script.ts
     //tsc
 
-    console.log("Hello world!");
+    //DataTypes
+    let a:string = "Md Shojib Hossain";
+    let b: number = 25;
+    let c: boolean = true;
+    let d: any = "Hello World";
+    console.log(a, b, c, d);
 
-    const country = 'Bangladesh and Myanmar';
-    console.log(country);
+    //Arrays
+    let e: (string | number | boolean)[] = [];
+    e = ["Md Shojib Hossain", 25, true];
+    console.log(e);
 
-    let Player = "Mashrafi Bin Mortaza"
-    console.log(Player);
-    // Player =  34; // this will produce an error message
-    Player = "Tamim Iqbal Khan"
-    console.log(Player);
+    //Objects
+    let f: { 
+        name: string, 
+        age: number, 
+        isStudent: boolean 
+    };
+    f = { 
+        name: "Md Shojib Hossain", 
+        age: 24, 
+        isStudent: true 
+    };
+    console.log(f);
 
-    let age;
-    console.log(age); // this will log undefined
-    age = 34;
-    console.log(age); // this will log 34
-    age = "Mashrafi Bin Mortaza";
-    console.log(age); // this will log Mashrafi Bin Mortaza without any errors
-
-    function multiply(a: number, b: number){
-        return a * b;
+    //Functions
+    function greet(name: string): void {
+        console.log(`Hello, ${name}!`);
     }
-    console.log(multiply(5, 3)); // this will log 15
-    // console.log(multiply("5", 3)); // this will produce an error message because the function expects number inputs
+    greet("Md Shojib Hossain");
 
-    let myArray: number[] = [1, 2, 3, 4, 5];
-    console.log(myArray); // this will log [1, 2, 3, 4, 5]
-    myArray.push(6);
-    console.log(myArray); // this will log [1, 2, 3, 4, 5, 6]
-    myArray.pop();
-    console.log(myArray); // this will log [1, 2, 3, 4, 5]
-    myArray[0] = 10;
-    console.log(myArray); // this will log [10, 2, 3, 4, 5]
-    myArray.splice(1, 2, 7, 8);
-    console.log(myArray); // this will log [10, 7, 8, 5]
-    myArray.reverse();
-    console.log(myArray); // this will log [8, 7, 10, 5]
+    function sum(x: number, y: number): number {
+        return x + y;
+    }
+    console.log(sum(10, 20));
 
-    // myArray.push('hello');
-    // console.log(myArray); // this will log [8, 7, 10, 5, "hello"]
 
-    
+    //Union Types
+    let x:(string | number)[] = [];
+    x.push("Hello");
+    x.push(10);
+    console.log(x);
+
+    let y: string | number;
+    y = "Hello";
+    console.log(y);
+    y = 10;
+    console.log(y);
