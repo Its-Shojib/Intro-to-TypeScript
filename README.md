@@ -10,8 +10,8 @@ Each day, you will find a new lesson focusing on different aspects of TypeScript
 
 - `Day-1/`: Introduction to TypeScript & Basic Types
 - `Day-2/`: Explicit and Union Types
-<!-- - `Day03/`: Interfaces
-- `Day04/`: Classes
+- `Day03/`: Functions
+<!-- - `Day04/`: Classes
 - `Day05/`: Functions -->
 <!-- - ... -->
 <!-- - `Day30/`: Advanced Topics and Best Practices -->
