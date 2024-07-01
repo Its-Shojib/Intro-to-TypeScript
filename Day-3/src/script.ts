@@ -57,3 +57,14 @@ let userDetails = (id: idType, user: userType)=>{
 }
 
 userDetails("123", user);
+
+
+//Functions Signature
+
+function add(a: number, b: number): number {
+    return a + b;
+}
+
+let addFunc: (a: number, b: number) => number = add;
+
+console.log(addFunc(2, 4));

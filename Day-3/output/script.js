@@ -38,3 +38,9 @@ let userDetails = (id, user) => {
     console.log(`User Is Student: ${user.isStudent}`);
 };
 userDetails("123", user);
+//Functions Signature
+function add(a, b) {
+    return a + b;
+}
+let addFunc = add;
+console.log(addFunc(2, 4));
