@@ -1,3 +1,9 @@
+    //Commands are:
+    //tsc --init
+    //tsc -w
+    //tsc script.ts
+    //tsc
+
     console.log("Hello world!");
 
     const country = 'Bangladesh and Myanmar';
@@ -37,3 +43,5 @@
 
     // myArray.push('hello');
     // console.log(myArray); // this will log [8, 7, 10, 5, "hello"]
+
+    

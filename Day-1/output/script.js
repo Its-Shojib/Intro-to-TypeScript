@@ -1,4 +1,9 @@
 "use strict";
+//Commands are:
+//tsc --init
+//tsc -w
+//tsc script.ts
+//tsc
 console.log("Hello world!");
 const country = 'Bangladesh and Myanmar';
 console.log(country);
