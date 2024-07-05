@@ -4,43 +4,37 @@
 //tsc -w
 //tsc script.ts
 //tsc
-let myFun;
-myFun = () => {
-    console.log("Hello world!");
-};
-myFun();
-// myFun = 5; //This will provide an error message;
-let paraMeteresFunc = (a, b, c) => {
-    console.log(a + b);
-    if (c) {
-        console.log(c);
+// Classes
+class Person {
+    constructor(name, age) {
+        this.name = name;
+        this.age = age;
     }
-};
-paraMeteresFunc(3, 4, 'Optional variable');
-let returnTypes = (a, b, c) => {
-    if (c) {
-        console.log(c);
+    greet() {
+        console.log(`Hello, my name is ${this.name} and I am ${this.age} years old.`);
     }
-    return a + b;
-};
-console.log(returnTypes(5, 7));
-let user = {
-    name: "John Doe",
-    description: "Software Developer",
-    age: 30,
-    isStudent: true
-};
-let userDetails = (id, user) => {
-    console.log(`User ID: ${id}`);
-    console.log(`User Name: ${user.name}`);
-    console.log(`User Description: ${user.description}`);
-    console.log(`User Age: ${user.age}`);
-    console.log(`User Is Student: ${user.isStudent}`);
-};
-userDetails("123", user);
-//Functions Signature
-function add(a, b) {
-    return a + b;
 }
-let addFunc = add;
-console.log(addFunc(2, 4));
+const Person1 = new Person('Shojib', 24);
+const Person2 = new Person('Masum', 23);
+const Persons = [];
+Persons.push(Person1);
+Persons.push(Person2);
+console.log(Person1.greet());
+console.log(Person2.greet());
+//Access Modifier
+class Employee extends Person {
+    constructor(name, age, department, salary) {
+        super(name, age);
+        this.department = department;
+        this.salary = salary;
+    }
+    getDepartment() {
+        return {
+            department: this.department,
+            salary: this.salary
+        };
+    }
+}
+const Employee1 = new Employee('Sakib', 30, 'IT', 20000);
+console.log(Employee1.getDepartment());
+// { department: 'IT', salary: 20000 }
