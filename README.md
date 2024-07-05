@@ -12,9 +12,9 @@ Each day, you will find a new lesson focusing on different aspects of TypeScript
 - `Day-2/`: Explicit and Union Types
 - `Day03/`: Functions
 - `Day04/`: Classes
-<!-- - `Day05/`: Functions -->
+- `Day05/`: Module Operations
 <!-- - ... -->
-<!-- - `Day30/`: Advanced Topics and Best Practices -->
+<!-- - `Day15/`: Advanced Topics and Best Practices -->
 
 ## How to Use This Repository
 
